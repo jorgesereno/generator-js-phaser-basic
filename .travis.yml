@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-js-phaser-basic' ]; then cd .. && eval "mv $currentfolder generator-js-phaser-basic" && cd generator-js-phaser-basic; fi
+
